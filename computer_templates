@@ -1,0 +1,61 @@
+Smart Groups (If necessary, creates Extension Attribute too!)
+-------------------------------------------------------------
+Out of Communication (More than 14 days): https://www.dropbox.com/sh/k4o1tad9mdyh59w/AABSEnurykH6aAFZHmx-XaWMa?dl=1
+  1. Smart Group with criteria of "Inventory Update" more than 14 days ago
+
+Uptime (More than 30 days uptime): https://www.dropbox.com/sh/kzsjgr3tjdc8q23/AACxkveJZI5x479yr-LLLWM-a?dl=1
+  1. Extension Attribute with a script looking for Uptime in Days
+  2. Smart Group with criteria of "Uptime" more than 30
+
+Consumed Battery: COMING SOON!
+Failing Battery: COMING SOON!
+
+______________________________________________________________________________________________________________________________________________________________________
+Workflows
+---------
+Individual Key Filevault 2: COMING SOON!
+
+______________________________________________________________________________________________________________________________________________________________________
+Self Service
+------------
+Maintenance Easy Button: https://www.dropbox.com/sh/uwitfsreyfmm3pc/AABKb6ukQL8aPl68ASOkkbw1a?dl=1
+  1. Category "Maintenance" created
+  2. Created policy "Easy Button" scoped to all computers, available in Self Service. Clears System and User caches, fixes permissions, verifies disk, submits inventory.
+
+Clear Cache: https://www.dropbox.com/sh/z706qfwugcpgn86/AABODaxIX-NJR0FbKdZmHC-0a?dl=1
+  1. Category "Maintenance" created
+  2. Created policy "Clear Caches" scoped to all computers, available in Self Service. Clears System and User caches.
+
+Submit Inventory: https://www.dropbox.com/sh/o0ihl39k8oxttm4/AADb-mH6lx9yzbGzkGIK1ZPCa?dl=1
+  1. Category "Maintenance" created
+  2. Created policy "Submit Inventory" scoped to all computers, available in Self Service. Submits inventory.
+
+Update All: COMING SOON!
+
+______________________________________________________________________________________________________________________________________________________________________
+Upgrade Workflow
+----------------
+In-place Mojave Upgrade: COMING SOON!
+
+______________________________________________________________________________________________________________________________________________________________________
+CIS Templates
+-------------
+Sierra CIS: COMING SOON!
+
+High Sierra CIS: https://www.dropbox.com/sh/opndlqgmni5xtvv/AAC_QOCLkef_CBw3RRK9yEqUa?dl=1
+1. Category "Security" created
+2. Extension Attribute for "2.5 Audit List" created (searches for file meant to scan for CIS Benchmark)
+3. Extension Attribute for "2.6 Audit Count" created (gathers number of issues found on scan of CIS Benchmark)
+4. Script "1. Set Organization Priorities.sh" created in category "Security" (applies a file showing what to check when Benchmark is run...company specific)
+5. Script "2. Security Audit Compliances ORG.sh" created in category "Security" (does the compliance check, executes the CIS Benchmark)
+6. Script "3. Security Remediation.sh" created in category "Security" (applies the fixes/adjustments to make computer client with org defined specifications of CIS Benchmark)
+7. Smart Group "All Managed Clients" with criteria of all clients, non-server
+8. Smart Group "Audit Count Greater than 0" with criteria of "2.6 Audit Count" more than 0
+9. Configuration Profile "10.13 Custom Settings" created in category "Security" (applies Config Profile enforced settings)
+10. Configuration Profile "CIS 10.13 LoginWindow Security_and_Privacy Screensaver" created in category "Security" (applies Config Profile deployed System Preference Login Window, Security and Privacy and Screensaver settings)
+11. Configuration Profile "CIS 10.13 Restrictions" created in category "Security" (applies Config Profile deployed restricitons)
+12. Policy "10.13 - 1. Set Priorites" created in category "Security" (runs "1. Set Organization Priorities.sh", once per computer, for all computers)
+13. Policy "CIS 10.13 - 2. Check Compliance" created in category "Security" (runs "2. Security Audit Compliances ORG.sh", once per computer per week, for all computers)
+14. Policy "CIS 10.13 - 3. Remediate" (runs "3. Security Remediation.sh", once per computer per week, for computers found in Smart Group "Audit Count Greater than 0")
+
+Mojave CIS: COMING SOON!
