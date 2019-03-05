@@ -6,7 +6,7 @@ The Jamf Pro Templater gives a Jamf Pro admin the ability to autopopulate their 
 
 ## What is it?
 
-A single-click solution for the creation of workflows! Using your Jamf Pro API credentials, the Jamf Pro Templater will take tested and up-to-date workflows stored on a server, and populate all items necessary for the specified workflow in your Jamf Pro! Templates can deploy workflows as basic as adding a Smart Group looking for Computers that have not checked in for 14 Days, or as complex as a full CIS workflow including benchmarks, remediation and reporting.  One click can save you hours of work and testing (and human error), so why reinvent the wheel?!
+A single-click solution for the creation of workflows! Using your Jamf Pro API credentials, the Jamf Pro Templater will take tested and up-to-date workflows stored on a server, and populate all items necessary for the specified workflow in your Jamf Pro! Templates can deploy workflows as basic as adding a Smart Group looking for Computers that have not checked in for 14 days, or as complex as a full CIS workflow including benchmarks, remediation and reporting.  One click can save you hours of work and testing (and human error), so why reinvent the wheel?!
 
 ## How it works?
 
