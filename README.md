@@ -10,7 +10,7 @@ A single-click solution for the creation of workflows! Using your Jamf Pro API c
 
 ## How it works?
 
-Exports of workflows are taken from working production enviornments, scrubbed for credentials/company specific information, and stored on a server. Once these workflows are tested, they are offered and are able to populate your Jamf Pro via https://templater.jamfpro.services. Jamf Pro Templater uses GET, POST and PUT in order to properly apply the templates. Just like any secure server, log out when you're finished using your session of Jamf Pro Templater (found at the bottom of each page). 
+Exports of workflows are taken from working production enviornments, scrubbed for credentials/company specific information, and stored on a server. Once these workflows are tested, they are offered and are able to populate your Jamf Pro via {templaterURLHERE}. Jamf Pro Templater uses GET, POST and PUT in order to properly apply the templates. Just like any secure server, log out when you're finished using your session of Jamf Pro Templater (found at the bottom of each page). 
 
 *NOTE: Policies are marked as "disabled" and there are no device specific information passed in any of the workflows.
 NOTE: Your Jamf Pro server must be able to access AWS.*
