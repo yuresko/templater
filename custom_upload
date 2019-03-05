@@ -1,0 +1,20 @@
+Custom Upload:
+
+To upload a template...
+  1. Find .zip file of export from Jamf Migrator
+  2. Click "Choose File" point file browser to desired .zip
+  3. Click "Submit"
+
+
+To create a template...
+  1. Open Jamf Migrator
+  2. Sign in to your Jamf Pro Servers (Source is where the templates come from. Destination doesn't matter)
+  3. Menu -> Preferences -> Export -> Ensure "Save Only" is checked
+  4. From the Jamf Pro listings choose what you wish to bundle as a template/workflow
+  5. Navigate to ~/Documents/Jamf Migrator/trimmed,  verify XMLs found in folders are desired and nothing is missing
+      **If items are missing, add additional items in Jamf Migrator. Previously exported stays.
+  6. Copy the whole "trimmed" folder to the desktop
+  7. Rename "trimmed" to desired workflow name, single string only, like: one_click_mojave_selfservice
+  8. Compress folder to .zip and upload!
+
+NOTE: Before making templates, clone items in Jamf and remove company/sensitive variables, and notate variables in a text file in the folder prior to compressing/zip.
