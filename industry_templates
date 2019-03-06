@@ -1,6 +1,8 @@
 Industry Templates
 ------------------
 
-NOTE: DO NOT use in production environments! Reach out to your Jamf Sales representitives for assistance.
+Industry templates are used to build out a Jamf Pro server with pre-defined workflows intended for testing. 
+These curated demo workflows/environments built by Jamf can assist in quickly getting off the ground and comfortable in Jamf Pro.
 
-Industry templates are used to build out a Jamf Pro server with pre-defined workflows and test data that has been built by Jamf. These curated demo workflows can assist in getting off the ground
+
+NOTE: DO NOT use in production environments! Reach out to your Jamf sales representitives for assistance.
